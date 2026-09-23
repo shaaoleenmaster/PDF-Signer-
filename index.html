@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>PDF Signer</title>
+    <meta name="description" content="Fast and secure in-browser PDF signing and sealing tool with ink extraction, rotation, and high-resolution export." />
+    <meta name="theme-color" content="#08a0d8" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="PDF Signer" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="apple-touch-icon" href="/icon.svg" />
+    <meta property="og:title" content="PDF SIGNER (V-1.1.1) - Official Document Signing" />
+    <meta property="og:description" content="Fast and secure in-browser PDF signing and sealing tool with ink extraction, rotation, and high-resolution export." />
+    <meta property="og:url" content="https://pdf-sign.ai.studio" />
+    <link rel="canonical" href="https://pdf-sign.ai.studio" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script src="/pdf.min.js"></script>
+    <script>
+      if (window.pdfjsLib) {
+        window.pdfjsLib.GlobalWorkerOptions.workerSrc = '/pdf.worker.min.js';
+      }
+    </script>
+  </head>
+  <body class="bg-slate-50 text-slate-800 antialiased select-none overflow-hidden">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

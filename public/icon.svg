@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#08a0d8"/>
+      <stop offset="100%" stop-color="#0583b2"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <!-- Background -->
+  <rect width="512" height="512" rx="104" fill="url(#bg)"/>
+  
+  <!-- PDF Sheet Container -->
+  <g filter="url(#shadow)">
+    <!-- White Paper Sheet -->
+    <path d="M144 88 H312 L384 160 V416 C384 429.25 373.25 440 360 440 H144 C130.75 440 120 429.25 120 416 V112 C120 98.75 130.75 88 144 88 Z" fill="#ffffff"/>
+    <!-- Folded Corner -->
+    <path d="M312 88 V152 C312 156.4 315.6 160 320 160 H384 Z" fill="#e2e8f0"/>
+  </g>
+
+  <!-- Document Lines -->
+  <rect x="160" y="196" width="130" height="18" rx="9" fill="#08a0d8" opacity="0.85"/>
+  <rect x="160" y="234" width="180" height="14" rx="7" fill="#cbd5e1"/>
+  <rect x="160" y="264" width="150" height="14" rx="7" fill="#cbd5e1"/>
+  <rect x="160" y="294" width="170" height="14" rx="7" fill="#cbd5e1"/>
+
+  <!-- Official Seal / Stamp Emblem (Bottom-Left) -->
+  <circle cx="204" cy="368" r="32" fill="#05ad72" stroke="#ffffff" stroke-width="4"/>
+  <!-- Stamp icon (Temple/Columns) -->
+  <path d="M188 376 H220 M192 376 V362 M200 376 V362 M208 376 V362 M216 376 V362 M186 362 H222 M204 352 L184 362 H224 Z" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+  <!-- Signature Ribbon (Bottom-Right) -->
+  <path d="M260 376 Q276 348 290 372 T324 354 T348 374" fill="none" stroke="#2563eb" stroke-width="6" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,8 @@
+{
+  "name": "PDF Signer",
+  "description": "Fast and secure in-browser PDF signing and sealing tool with ink extraction, rotation, and high-resolution export.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
